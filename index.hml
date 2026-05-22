@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vhon Jeric Rivera | NOC Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Vhon Jeric Rivera</h1>
+            <h2>IT Infrastructure & NOC Engineer</h2>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="container section-padding">
+            <h3>About Me</h3>
+            <p>Highly analytical and detail-oriented Information Technology professional (BSIT, Cum Laude) with cumulative experience spanning Service Desk Operations and Network Operations Center (NOC) environments. Proven track record in real-time system monitoring (Grafana), technical troubleshooting, and incident lifecycle management using ITIL v4 frameworks and Jira ticketing systems.</p>
+        </section>
+
+        <section id="experience" class="container section-padding bg-light">
+            <h3>Professional Experience</h3>
+            <div class="job">
+                <h4>Service Desk / NOC Engineer</h4>
+                <p class="company">NCS PH (Formerly Yondu Inc.) | Feb 2025 – Present</p>
+                <ul>
+                    <li>Monitor enterprise-level network infrastructure and critical system alerts using NMS tools like Grafana to ensure 24/7/365 operational uptime.</li>
+                    <li>Manage technical incidents and service requests using Jira Service Desk, adhering to SLA guidelines.</li>
+                    <li>Perform Tier-1 technical troubleshooting for network connectivity and system bottlenecks.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h4>Process Executive</h4>
+                <p class="company">Infosys BPM | Mar 2024 – Jan 2025</p>
+                <ul>
+                    <li>Delivered cross-platform technical assistance to global users, resolving system access errors.</li>
+                    <li>Logged and tracked high-priority escalations via enterprise ticketing software.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="container section-padding">
+            <h3>Featured Projects</h3>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h4>Python Network Uptime Monitor</h4>
+                    <p>A lightweight Python script utilizing ping libraries to monitor remote server availability and log latency metrics locally, demonstrating automated infrastructure monitoring.</p>
+                </div>
+                <div class="project-card">
+                    <h4>Sagada Hike Itinerary Tracker</h4>
+                    <p>An interactive, responsive HTML/CSS/JS web application designed to track camping gear, budget, and a three-day itinerary for a Mt. Kupapey hiking expedition.</p>
+                </div>
+                <div class="project-card">
+                    <h4>Motorcycle Maintenance Log</h4>
+                    <p>A basic C# and SQL backend application built to track motorcycle service packages, oil changes, and custom hardware modifications.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container section-padding bg-light">
+            <h3>Get In Touch</h3>
+            <p>Currently based in Taguig City, Philippines, and open to international opportunities in IT Infrastructure and NOC roles.</p>
+            <ul class="contact-links">
+                <li>Email: <a href="mailto:vhonjeric2@gmail.com">vhonjeric2@gmail.com</a></li>
+                <li>LinkedIn: <a href="#">[Insert LinkedIn URL]</a></li>
+                <li>GitHub: <a href="https://github.com/vhonjeric" target="_blank">github.com/vhonjeric</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vhon Jeric Rivera. Built with HTML & CSS.</p>
+    </footer>
+</body>
+</html>
