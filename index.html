@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vhon Jeric Rivera | NOC Engineer Portfolio</title>
+    <title>Vhon Jeric Rivera | IT Infrastructure & NOC Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Vhon Jeric Rivera</h1>
-            <h2>IT Infrastructure & NOC Engineer</h2>
+    <header class="sticky-nav">
+        <div class="nav-container">
+            <div class="logo">VJR.</div>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -22,64 +22,104 @@
         </div>
     </header>
 
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Vhon Jeric Rivera</h1>
+            <h2>IT Infrastructure & NOC Engineer</h2>
+            <p>Ensuring 24/7/365 operational uptime through proactive monitoring and rapid incident resolution.</p>
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+    </section>
+
     <main>
         <section id="about" class="container section-padding">
-            <h3>About Me</h3>
-            <p>Highly analytical and detail-oriented Information Technology professional (BSIT, Cum Laude) with cumulative experience spanning Service Desk Operations and Network Operations Center (NOC) environments. Proven track record in real-time system monitoring (Grafana), technical troubleshooting, and incident lifecycle management using ITIL v4 frameworks and Jira ticketing systems.</p>
+            <div class="section-header">
+                <h3>About Me</h3>
+                <div class="divider"></div>
+            </div>
+            <p class="lead-text">Highly analytical and detail-oriented Information Technology professional (BSIT, Cum Laude) with cumulative experience spanning Service Desk Operations and Network Operations Center (NOC) environments. Proven track record in real-time system monitoring (Grafana), technical troubleshooting, and incident lifecycle management using ITIL v4 frameworks and Jira ticketing systems.</p>
+            
+            <div class="skills-grid mt-4">
+                <div class="skill-tag">Network Monitoring (Grafana)</div>
+                <div class="skill-tag">ITIL v4 Frameworks</div>
+                <div class="skill-tag">Jira Service Desk</div>
+                <div class="skill-tag">Hardware/Software Troubleshooting</div>
+                <div class="skill-tag">Incident Management</div>
+                <div class="skill-tag">HTML / CSS / JS / C#</div>
+            </div>
         </section>
 
-        <section id="experience" class="container section-padding bg-light">
-            <h3>Professional Experience</h3>
-            <div class="job">
-                <h4>Service Desk / NOC Engineer</h4>
-                <p class="company">NCS PH (Formerly Yondu Inc.) | Feb 2025 – Present</p>
-                <ul>
-                    <li>Monitor enterprise-level network infrastructure and critical system alerts using NMS tools like Grafana to ensure 24/7/365 operational uptime.</li>
-                    <li>Manage technical incidents and service requests using Jira Service Desk, adhering to SLA guidelines.</li>
-                    <li>Perform Tier-1 technical troubleshooting for network connectivity and system bottlenecks.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h4>Process Executive</h4>
-                <p class="company">Infosys BPM | Mar 2024 – Jan 2025</p>
-                <ul>
-                    <li>Delivered cross-platform technical assistance to global users, resolving system access errors.</li>
-                    <li>Logged and tracked high-priority escalations via enterprise ticketing software.</li>
-                </ul>
+        <section id="experience" class="bg-light section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h3>Professional Experience</h3>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Service Desk / NOC Engineer</h4>
+                            <p class="company">NCS PH (Formerly Yondu Inc.) | Feb 2025 – Present</p>
+                            <ul>
+                                <li>Monitor enterprise-level network infrastructure and critical system alerts using NMS tools like Grafana to ensure 24/7/365 operational uptime.</li>
+                                <li>Manage technical incidents and service requests using Jira Service Desk, adhering to SLA guidelines.</li>
+                                <li>Execute rapid technical troubleshooting and escalate high-priority issues to appropriate Tier 2/3 engineering teams.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Process Executive</h4>
+                            <p class="company">Infosys BPM | Mar 2024 – Jan 2025</p>
+                            <ul>
+                                <li>Troubleshot and assisted global customers in navigating websites and web applications.</li>
+                                <li>Logged and tracked high-priority escalations via enterprise ticketing software.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="projects" class="container section-padding">
-            <h3>Featured Projects</h3>
+            <div class="section-header">
+                <h3>Featured Projects</h3>
+                <div class="divider"></div>
+            </div>
             <div class="project-grid">
                 <div class="project-card">
-                    <h4>Python Network Uptime Monitor</h4>
-                    <p>A lightweight Python script utilizing ping libraries to monitor remote server availability and log latency metrics locally, demonstrating automated infrastructure monitoring.</p>
-                </div>
-                <div class="project-card">
-                    <h4>Sagada Hike Itinerary Tracker</h4>
-                    <p>An interactive, responsive HTML/CSS/JS web application designed to track camping gear, budget, and a three-day itinerary for a Mt. Kupapey hiking expedition.</p>
+                    <h4>Sagada Expedition Tracker</h4>
+                    <p>A responsive HTML/CSS/JS web application designed to track camping gear, budget logistics, and multi-day trail itineraries for mountain hiking.</p>
                 </div>
                 <div class="project-card">
                     <h4>Motorcycle Maintenance Log</h4>
-                    <p>A basic C# and SQL backend application built to track motorcycle service packages, oil changes, and custom hardware modifications.</p>
+                    <p>A conceptual database application built to track service packages, mileage intervals, and custom hardware modifications.</p>
+                </div>
+                <div class="project-card">
+                    <h4>NOC Dashboard Simulation</h4>
+                    <p>A front-end interface built to visualize mock network traffic and simulate alert ticketing using modern web frameworks.</p>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="container section-padding bg-light">
-            <h3>Get In Touch</h3>
-            <p>Currently based in Taguig City, Philippines, and open to international opportunities in IT Infrastructure and NOC roles.</p>
-            <ul class="contact-links">
-                <li>Email: <a href="mailto:vhonjeric2@gmail.com">vhonjeric2@gmail.com</a></li>
-                <li>LinkedIn: <a href="#">[Insert LinkedIn URL]</a></li>
-                <li>GitHub: <a href="https://github.com/vhonjeric" target="_blank">github.com/vhonjeric</a></li>
-            </ul>
+        <section id="contact" class="bg-dark section-padding text-center">
+            <div class="container">
+                <h3 class="text-white">Ready to Connect?</h3>
+                <p class="text-white mb-4">Based in Taguig, Metro Manila, and always open to discussing new opportunities in IT Infrastructure.</p>
+                <div class="contact-buttons">
+                    <a href="mailto:vhonjeric2@gmail.com" class="btn btn-outline">Email Me</a>
+                    <a href="https://github.com/vhonjeric" target="_blank" class="btn btn-outline">GitHub Profile</a>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Vhon Jeric Rivera. Built with HTML & CSS.</p>
+        <p>&copy; 2026 Vhon Jeric Rivera. Engineered with code and coffee.</p>
     </footer>
 </body>
 </html>
