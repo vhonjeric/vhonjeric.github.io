@@ -229,15 +229,21 @@ nav a:hover { color: var(--accent-color); }
     width: 100%;
     max-width: 380px;
     border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-    border: 3px solid rgba(14, 165, 233, 0.3);
+    /* Soft cyan glow to match the theme */
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.15);
+    border: 2px solid rgba(14, 165, 233, 0.2);
     object-fit: cover;
-    transition: transform var(--transition-speed) var(--ease), border-color var(--transition-speed);
+    /* Makes it blend with the dark background */
+    filter: grayscale(100%) contrast(1.1) brightness(0.9);
+    transition: all var(--transition-speed) var(--ease);
 }
 
 .hero-image img:hover {
     transform: translateY(-8px);
     border-color: var(--accent-color);
+    box-shadow: 0 15px 35px rgba(14, 165, 233, 0.4);
+    /* Returns to full color on hover */
+    filter: grayscale(0%) contrast(1) brightness(1);
 }
 
 /* --- BUTTONS --- */
