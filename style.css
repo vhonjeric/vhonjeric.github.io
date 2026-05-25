@@ -377,21 +377,23 @@ nav a:hover { color: var(--accent-color); }
     z-index: 1;
 }
 
+/* Updated to use hardware-accelerated Transform instead of Height */
 .project-card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 0;
+    height: 100%;
     background: var(--accent-color);
-    transition: height var(--transition-speed) var(--ease);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform var(--transition-speed) var(--ease);
     z-index: -1;
 }
 
 .card-inner {
     padding: 35px;
-    transition: color 0.3s ease;
 }
 
 .project-card:hover {
@@ -400,14 +402,25 @@ nav a:hover { color: var(--accent-color); }
     border-color: transparent;
 }
 
-.project-card:hover::before { height: 100%; }
+.project-card:hover::before { 
+    transform: scaleY(1); 
+}
+
+/* Added color transitions directly to the text so it fades smoothly */
+.project-card h4,
+.project-card p {
+    transition: color var(--transition-speed) var(--ease);
+}
 
 .project-card:hover h4,
-.project-card:hover p { color: white; }
+.project-card:hover p { 
+    color: white; 
+}
 
 .project-card h4 {
     font-size: 1.25rem;
     margin-bottom: 15px;
+    color: var(--primary-color);
 }
 
 .project-card p {
