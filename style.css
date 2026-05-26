@@ -411,6 +411,16 @@ nav a:hover { color: var(--accent-color); }
 .icon-noc { text-shadow: 0 0 20px rgba(239, 68, 68, 0.6); } 
 
 /* Typography Overrides for Dark Cards */
+
+/* 1. Kills the default purple "visited link" browser behavior */
+.project-link, 
+.project-link:visited, 
+.project-link:hover, 
+.project-link:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 .project-card h4 {
     font-size: 1.4rem;
     margin-bottom: 12px;
@@ -423,25 +433,34 @@ nav a:hover { color: var(--accent-color); }
     color: #6ee7b7 !important; /* Soft green title for Sagada */
 }
 
-/* New: Lightsaber Red title with subtle neon glow for NOC */
 .title-noc {
     color: #f87171 !important; /* Bright Red title */
-    text-shadow: 0 0 10px rgba(239, 68, 68, 0.3); /* Soft red glow on the text itself */
+    text-shadow: 0 0 10px rgba(239, 68, 68, 0.3); /* Soft red glow */
+}
+
+/* 2. Forces the paragraph text to be bright white */
+.project-card p {
+    color: #ffffff !important; /* Pure white */
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+    transition: color var(--transition-speed) var(--ease);
 }
 
 /* Hover Effects */
 .project-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-    border-color: var(--accent-color); /* Adds the cyan border glow on hover */
+    border-color: var(--accent-color);
 }
 
 .project-card:hover .project-icon {
     transform: scale(1.1) rotate(-5deg);
 }
 
+/* Subtle brightening on hover */
 .project-card:hover p {
-    color: #cbd5e1; /* Slightly brightens the description on hover */
+    color: #f1f5f9 !important; 
 }
 
 /* --- FOOTER --- */
