@@ -366,72 +366,83 @@ nav a:hover { color: var(--accent-color); }
 .timeline-content li { margin-bottom: 10px; }
 
 /* --- PROJECTS GRID --- */
+/* --- PROJECTS GRID --- */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
 }
 
 .project-card {
-    background: white;
+    background: #111827; /* Sleek dark slate background */
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-    border: 1px solid #f1f5f9;
+    border: 1px solid #334155; /* Subtle border */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     transition: all var(--transition-speed) var(--ease);
     position: relative;
     overflow: hidden;
     z-index: 1;
 }
 
-/* Updated to use hardware-accelerated Transform instead of Height */
-.project-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.project-link {
+    text-decoration: none;
+    display: block;
     height: 100%;
-    background: var(--accent-color);
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: transform var(--transition-speed) var(--ease);
-    z-index: -1;
 }
 
 .card-inner {
-    padding: 35px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-    border-color: transparent;
+/* Icons & Glowing Effects */
+.project-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    transition: transform var(--transition-speed) var(--ease);
+    display: inline-block;
 }
 
-.project-card:hover::before { 
-    transform: scaleY(1); 
-}
+.icon-sagada { text-shadow: 0 0 20px rgba(52, 211, 153, 0.6); }
+.icon-moto { text-shadow: 0 0 20px rgba(255, 255, 255, 0.4); }
+.icon-noc { text-shadow: 0 0 20px rgba(14, 165, 233, 0.6); }
 
-/* Added color transitions directly to the text so it fades smoothly */
-.project-card h4,
-.project-card p {
+/* Typography Overrides for Dark Cards */
+.project-card h4 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #f8fafc; /* White text for titles */
+    line-height: 1.2;
     transition: color var(--transition-speed) var(--ease);
 }
 
-.project-card:hover h4,
-.project-card:hover p { 
-    color: white; 
-}
-
-.project-card h4 {
-    font-size: 1.25rem;
-    margin-bottom: 15px;
-    color: var(--primary-color);
+.title-sagada { 
+    color: #6ee7b7 !important; /* Soft green title for Sagada */
 }
 
 .project-card p {
-    color: var(--text-light);
-    font-size: 1rem;
+    color: #94a3b8; /* Muted gray for descriptions */
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+    transition: color var(--transition-speed) var(--ease);
+}
+
+/* Hover Effects */
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    border-color: var(--accent-color); /* Adds the cyan border glow on hover */
+}
+
+.project-card:hover .project-icon {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.project-card:hover p {
+    color: #cbd5e1; /* Slightly brightens the description on hover */
 }
 
 /* --- FOOTER --- */
